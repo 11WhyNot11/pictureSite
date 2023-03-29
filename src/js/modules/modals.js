@@ -40,7 +40,7 @@ const modals = () => {
 
 
 
-		close.addEventListener('click', (e) => {
+		close.addEventListener('click', () => {
 			modal.style.display = 'none';
 			document.body.style.overflow = '';
 			document.body.style.marginRight = `0px`;
