@@ -56,6 +56,7 @@ const sliders = (slides, dir, prev, next) => {
 				changeSlides(1);
 				items[slideIndex - 1].classList.remove('slideInLeft');
 				items[slideIndex - 1].classList.add('slideInRight');
+				
 			},5000);
 		}
 	}
