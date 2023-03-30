@@ -11,10 +11,6 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'rules': {
-		'indent': [
-			'warn',
-			'tab'
-		],
 		'linebreak-style': [
 			'error',
 			'windows'

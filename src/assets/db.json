@@ -20,5 +20,29 @@
             "title": "Шарж",
             "link": "#sharj"
         }
+    ],
+
+    "values": [
+        {
+            "sizeValues": {
+                "value1": "",
+                "value2": "500",
+                "value3": "1000",
+                "value4": "1500",
+                "value5": "2000"
+            },
+            "materialValues": {
+                "value1": "",
+                "value2": "1",
+                "value3": "1.2",
+                "value4": "1.5"
+            },
+            "optionValues": {
+                "value1": "0",
+                "value2": "1000",
+                "value3": "2000",
+                "value4": "500"
+            }
+        }
     ]
 }

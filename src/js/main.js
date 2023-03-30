@@ -4,17 +4,24 @@ import forms from './modules/forms';
 import mask from './modules/mask';
 import checkTextInput from './modules/checkTextInputs';
 import showMoreImgs from './modules/loadImages';
+import calc from './modules/calculator';
+import changeCalcModalState from './modules/changeCalcModalState';
 
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
 
+	let calcModalState = {};
+
+
 	modals();
 	sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
 	sliders('.main-slider-item', 'vertical');
-	forms();
+	forms(calcModalState);
 	mask('[name="phone"]');
 	checkTextInput('[name="name"]');
 	checkTextInput('[name="message"]');
 	showMoreImgs('.button-styles', '#styles .row');
+	calc('#size', '#material', '#options', '.promocode', '.calc-price');
+	changeCalcModalState(calcModalState);
 	
 });
