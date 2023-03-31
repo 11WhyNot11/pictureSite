@@ -6,12 +6,15 @@ import checkTextInput from './modules/checkTextInputs';
 import showMoreImgs from './modules/loadImages';
 import calc from './modules/calculator';
 import changeCalcModalState from './modules/changeCalcModalState';
+import filter from './modules/filterImgs';
+import pictureSize from './modules/pictureSize';
 
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
 
 	let calcModalState = {};
 
+	
 
 	modals();
 	sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
@@ -23,5 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	showMoreImgs('.button-styles', '#styles .row');
 	calc('#size', '#material', '#options', '.promocode', '.calc-price');
 	changeCalcModalState(calcModalState);
+	filter();
+	pictureSize('.sizes-block');
 	
 });
