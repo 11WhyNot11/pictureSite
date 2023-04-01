@@ -8,6 +8,8 @@ import calc from './modules/calculator';
 import changeCalcModalState from './modules/changeCalcModalState';
 import filter from './modules/filterImgs';
 import pictureSize from './modules/pictureSize';
+import createAccordion from './modules/accordion';
+import createBurger from './modules/burger';
 
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
@@ -28,5 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	changeCalcModalState(calcModalState);
 	filter();
 	pictureSize('.sizes-block');
+	createAccordion('.accordion-heading');
+	createBurger('.burger-menu', '.burger');
 	
 });
