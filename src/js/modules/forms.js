@@ -35,6 +35,7 @@ const forms = (state) => {
 		item.addEventListener('input', () => {
 			let dots;
 			const arr = item.files[0].name.split('.');
+			
 			arr[0].length > 7 ? dots = '...' : dots = '.'; 
 			const name = arr[0].substr(0, 7) + dots + arr[1];
 			item.previousElementSibling.textContent = name;

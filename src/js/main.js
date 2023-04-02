@@ -11,6 +11,7 @@ import pictureSize from './modules/pictureSize';
 import createAccordion from './modules/accordion';
 import createBurger from './modules/burger';
 import scroll from './modules/scrolling';
+import drop from './modules/drop';
 
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
@@ -34,5 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	createAccordion('.accordion-heading');
 	createBurger('.burger-menu', '.burger');
 	scroll('.pageup');
+	drop();
 	
 });
